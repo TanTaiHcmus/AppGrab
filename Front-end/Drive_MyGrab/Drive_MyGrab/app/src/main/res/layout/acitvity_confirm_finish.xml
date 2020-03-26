@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="@drawable/grab_driver"
+    tools:context=".Confirm_Finish">
+
+    <fragment
+        android:id="@+id/myMap1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_weight="50"
+        tools:layout_editor_absoluteX="-45dp"
+        tools:layout_editor_absoluteY="-16dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Tên khách hàng: "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="35dp"
+            android:id="@+id/txt_showtenkhachhang_confirm"
+            android:text=" "
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Số điện thoại: "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="35dp"
+            android:id="@+id/txt_showsdt_confirm"
+            android:text=" "
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Số tiền: "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="35dp"
+            android:id="@+id/txt_showsotien_confirm"
+            android:text=" "
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_xacnhan_confirm"
+        android:layout_width="match_parent"
+        android:layout_weight="10"
+        android:layout_height="50dp"
+        android:background="#2574A2"
+        android:onClick="ToAgreeConfirm"
+        android:text="Xác nhận hoàn thành chuyến đi"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#F7F9FA"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_weight="10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        android:weightSum="2">
+
+        <ImageButton
+            android:id="@+id/image_home_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="Backto"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/home" />
+
+    </LinearLayout>
+
+</LinearLayout>

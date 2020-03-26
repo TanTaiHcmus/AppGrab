@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyGrab</string>
+    <string name="title_activity_login_screen">Maps</string>
+    <string name="title_activity_order_car">DirectionMap</string>
+    <string name="Server_Address">http://192.168.137.39:3000/</string>
+    <string name="type_account">1</string>
+</resources>

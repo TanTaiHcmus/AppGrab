@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Drive_MyGrab</string>
+    <string name="title_activity_login_screen">Maps</string>
+    <string name="title_activity_driver__status1">Map</string>
+    <string name="Server_Address">http://192.168.137.39:3000/</string>
+    <string name="type_account">0</string>
+</resources>
